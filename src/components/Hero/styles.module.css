@@ -1,0 +1,306 @@
+.HeroMain {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #111111;
+}
+
+.HeroBackground {
+    position: absolute;
+    width: 100%;
+}
+
+.HeroBackgroundText {
+    position: absolute;
+    left: 170px;
+    top: 280px;
+}
+
+.HeroBackgroundTextMain {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    margin-bottom: 19px;
+}
+
+.HeroBackgroundTextDescription {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+}
+
+.HeroBackgroundClouds1, .HeroBackgroundClouds2, .HeroBackgroundClouds3 {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+
+    will-change: transform;
+}
+
+.HeroBackgroundClouds1 {
+    animation: clouds1 30s linear infinite;
+}
+
+.HeroBackgroundClouds2 {
+    transform: translateX(100%);
+    animation: clouds2 30s linear infinite;
+}
+
+.HeroBackgroundClouds3 {
+    transform: translateX(200%);
+    animation: clouds3 30s linear infinite;
+}
+
+.HeroBackgroundCloud1, .HeroBackgroundCloud2, .HeroBackgroundCloud3, .HeroBackgroundCloud4, .HeroBackgroundCloud5, .HeroBackgroundCloud6, .HeroBackgroundCloud7, .HeroBackgroundCloud8, .HeroBackgroundCloud9 {
+    z-index: 100;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.HeroBackgroundCloud1 {
+    left: 10%;
+    top: 36%;
+}
+
+.HeroBackgroundCloud2 {
+    left: 40%;
+    top: 11%;
+}
+
+.HeroBackgroundCloud3 {
+    left: 70%;
+    top: 21%;
+}
+
+.HeroBackgroundCloud4 {
+    left: 5%;
+    top: 20%;
+}
+
+.HeroBackgroundCloud5 {
+    left: 54%;
+    top: 40%;
+}
+
+.HeroBackgroundCloud6 {
+    left: 72%;
+    top: 25%;
+}
+
+.HeroBackgroundCloud7 {
+    left: 5%;
+    top: 45%;
+}
+
+.HeroBackgroundCloud8 {
+    left: 40%;
+    top: 26%;
+}
+
+.HeroBackgroundCloud9 {
+    left: 85%;
+    top: 50%;
+}
+
+@keyframes clouds1 {
+    from {
+        transform: translateX(0);
+    }
+    33.333% {
+        transform: translateX(-100%);
+    }
+    33.334% {
+        display: none;
+    }
+    33.335% {
+        transform: translateX(200%);
+    }
+    33.336% {
+        display: block;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes clouds2 {
+    from {
+        transform: translateX(100%);
+    }
+    66.666% {
+        transform: translateX(-100%);
+    }
+    66.667% {
+        display: none;
+    }
+    66.668% {
+        transform: translateX(200%);
+    }
+    66.669% {
+        display: block;
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes clouds3 {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.HeroBackgroundStars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.HeroBackgroundStar {
+    position: absolute;
+}
+
+.HeroBackgroundStar1 {
+    left: 8.6%;
+    top: 6.4%;
+}
+
+.HeroBackgroundStar2 {
+    left: 21.5%;
+    top: 12.4%;
+}
+
+.HeroBackgroundStar3 {
+    left: 32.8%;
+    top: 9.3%;
+}
+
+.HeroBackgroundStar4 {
+    left: 65%;
+    top: 5.3%;
+}
+
+.HeroBackgroundStar5 {
+    left: 92.9%;
+    top: 4.5%;
+    display: none;
+}
+
+.HeroBackgroundStar6 {
+    left: 10.3%;
+    top: 28.4%;
+    display: none;
+}
+
+.HeroBackgroundStar7 {
+    left: 38.8%;
+    top: 25.3%;
+}
+
+.HeroBackgroundStar8 {
+    left: 56.9%;
+    top: 17.6%;
+}
+
+.HeroBackgroundStar9 {
+    left: 74.6%;
+    top: 13.7%;
+}
+
+.HeroBackgroundStar10 {
+    left: 60.6%;
+    top: 31.2%;
+}
+
+.HeroBackgroundStar11 {
+    left: 78.4%;
+    top: 33.9%;
+    display: none;
+}
+
+.HeroBackgroundStar12 {
+    left: 91.5%;
+    top: 28.4%;
+}
+
+.HeroBackgroundStar13 {
+    left: 96.4%;
+    top: 38.3%;
+}
+
+.HeroBackgroundStar14 {
+    left: 7.2%;
+    top: 63.1%;
+}
+
+.HeroBackgroundStar15 {
+    left: 15.8%;
+    top: 52.4%;
+}
+
+.HeroBackgroundStar16 {
+    left: 36%;
+    top: 53.6%;
+}
+
+.HeroBackgroundStar17 {
+    left: 54.6%;
+    top: 44.5%;
+    display: none;
+}
+
+.HeroBackgroundMoon {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+
+    width: 128px;
+}
+
+.HeroBackgroundGround {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items:flex-end;
+
+    width: 100%;
+}
+
+.HeroBackgroundLand2 {
+    background-color: #545454;
+
+    height: 61px;
+    width: 100%;
+
+    border-top-right-radius: 100px;
+}
+
+.HeroBackgroundRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+@media (max-width: 1980px) {
+    .HeroBackgroundHouses {
+        height: 729px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');

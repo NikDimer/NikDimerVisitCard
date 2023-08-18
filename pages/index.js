@@ -1,18 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import Hero from '@/src/components/Hero/Hero'
+import MyPath from '@/src/components/MyPath/MyPath'
 
-import land1 from '@/src/images/land1.png'
-import houses from '@/src/images/houses.svg'
-import moon from '@/src/images/moon.svg'
+import styles from '@/styles/Home.module.css'
+import classnames from 'classnames'
 
 export default function Home() {
-  function CloudAnimation() {
-    while(true) {
-      
-    }
-  }
-
   return (
     <>
       <Head>
@@ -22,16 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.HeroMain}>
-          <Image className={styles.HeroBackgroundMoon} src={moon}/>
-          <div className={styles.HeroBackgroundGround}>
-              <Image className={styles.HeroBackgroundLand1} src={land1}/>
-              <div className={styles.HeroBackgroundRight}>
-                <Image className={styles.HeroBackgroundHouses} src={houses}/>
-                <div className={styles.HeroBackgroundLand2}/>
-              </div>
-            </div>
-        </div>
+        <Hero />
+        <MyPath />
       </main>
     </>
   )
