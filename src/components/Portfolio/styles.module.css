@@ -1,0 +1,104 @@
+.PortfolioMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #545454;
+
+    padding-bottom: 63px;
+}
+
+.PortfolioTitle {
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    margin-bottom: 39px;
+}
+
+.PortfolioFiltersGroup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    row-gap: 26px;
+    column-gap: 36px;
+
+    max-width: 900px;
+
+    margin-bottom: 26px;
+}
+
+.PortfolioFiltersGroupItem {
+    width: 180px;
+    height: 50px;
+
+    text-align: center;
+
+    border: solid 3px rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.PortfolioFiltersGroupItem:hover {
+    border-color: white;
+}
+
+.PortfolioFiltersGroupItem:hover .PortfolioFiltersGroupItemText {
+    color: white;
+}
+
+.PortfolioFiltersGroupItemActive {
+    border-color: white;
+    background-color: rgba(217, 217, 217, 0.20);
+}
+
+.PortfolioFiltersGroupItemActive .PortfolioFiltersGroupItemText {
+    color: white;
+}
+
+.PortfolioFiltersGroupItemText {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s;
+}
+
+.PortfolioProjectCardsGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+
+    list-style: none;
+
+    margin-bottom: 26px;
+}
+
+.PortfolioProjectCardsGroupItem {
+    width: 400px;
+    height: 226px;
+
+    background-color: #D9D9D9;
+}
+
+.PortfolioAllProjectsLinkText {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');

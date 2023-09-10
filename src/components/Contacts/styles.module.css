@@ -1,0 +1,108 @@
+.ContactsMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #545454;
+
+    padding-bottom: 70px;
+}
+
+.ContactsTitle {
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    margin-bottom: 59px;
+}
+
+.ContactsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 38px;
+}
+
+.ContactsFormItem {
+    width: 753px;
+    padding: 20px 0;
+    text-align: center;
+
+    outline: none;
+    border: solid 3px rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+
+    background-color: transparent;
+
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s;
+}
+
+.ContactsFormItem:hover {
+    border-color: white;
+}
+
+.ContactsFormItem:focus {
+    border-color: white;
+    color: white;
+}
+
+.ContactsFormItem:not(:placeholder-shown):not(:focus):not([type=submit]) {
+    color: white;
+    border-color: white;
+    background-color: rgba(217, 217, 217, 0.20);
+}
+
+.ContactsFormItem::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ContactsFormItem:focus::placeholder {
+    color: transparent;
+  }
+
+.ContactsFormMessageText {
+    min-height: 343px;
+    resize: none;
+
+    border-radius: 37px;
+}
+
+.ContactsFormSubmitButton {
+    width: 384px;
+    cursor: pointer;
+}
+
+.ContactsFormSubmitButton:hover {
+    color: white;
+    border-color: white;
+}
+
+.ContactsIconsGroup {
+    display: flex;
+    gap: 12px;
+}
+
+.ContactsIconsGroupItem {
+    width: 75px;
+    height: 75px;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.ContactsIconsGroupItem:hover {
+    opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');

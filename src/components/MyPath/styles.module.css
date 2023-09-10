@@ -1,22 +1,283 @@
 .MyPathMain {
     width: 100%;
-    height: 100vh;
     
     background-color: #545454;
 
     padding-top: 54px;
+    padding-bottom: 65px;
 }
 
 .MyPathTitle {
-    font-size: 48px;
+    font-size: 42px;
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    margin-bottom: 51px;
+}
+
+.MyPathTrainWayContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyPathTrainWay {
+    width: 1318px;
+    height: 1120px;
+
+    position: relative;
+}
+
+.MyPathTrainWayImage {
+    border-radius: 50%;
+    border: 3px solid #303030;
+
+    opacity: 0.7;
+}
+
+.MyPathTrainImage1, .MyPathTrainImage2, .MyPathTrainImage3 {
+    width: 692px;
+    height: 40px;
+
+    position: absolute;
+
+    webkit-backface-visibility: hidden;
+
+    opacity: 0;
+}
+
+.MyPathTrainImage1 {
+    bottom: 0;
+    left: 0;
+
+    animation: train1 15s linear infinite;
+}
+
+.MyPathTrainImage2 {
+    bottom: 0;
+    right: 0;
+
+    animation: train2 15s linear infinite;
+}
+
+.MyPathTrainImage3 {
+    bottom: 0;
+    left: 0;
+
+    animation: train3 15s linear infinite;
+}
+
+@keyframes train1 {
+    from {
+        transform: translateX(-692px);
+        opacity: 1;
+    }
+    33.333% {
+        transform: translateX(1136px);
+        opacity: 1;
+    }
+    33.334% {
+        transform: translateX(1136px);
+        opacity: 0;
+    }
+    33.335% {
+        transform: translateX(-692px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-692px);
+        opacity: 1;
+    }
+}
+
+@keyframes train2 {
+    from {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 1;
+    }
+    33.333% {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 1;
+    }
+    66.666% {
+        transform: translateX(-1136px) scaleX(-1);
+        opacity: 1;
+    }
+    66.667% {
+        transform: translateX(-1136px) scaleX(-1);
+        opacity: 0;
+    }
+    66.668% {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 0;
+    }
+    66.669% {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 1;
+    }
+    66.669% {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(629px) scaleX(-1);
+        opacity: 1;
+    }
+}
+
+@keyframes train3 {
+    from {
+        transform: translateX(-692px);
+        opacity: 1;
+    }
+    66.666% {
+        transform: translateX(-692px);
+        opacity: 1;
+    }
+    99.997% {
+        transform: translateX(1136px);
+        opacity: 1;
+    }
+    99.998% {
+        transform: translateX(1136px);
+        opacity: 0;
+    }
+    99.999% {
+        transform: translateX(-692px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-692px);
+        opacity: 1;
+    }
+}
+
+.MyPathTrainWayCircle {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background-color: #303030;
+
+    z-index: 99;
+}
+
+.MyPathTrainWayLine {
+    position: absolute;
+
+    width: 1157px;
+    height: 49px;
+
+    background-color: #303030;
+
+    overflow: hidden
+}
+
+.MyPathTrainWayCircle1 {
+    left: 0;
+    top: 0;
+}
+
+.MyPathTrainWayCircle2 {
+    right: 0;
+    top: 299px;
+}
+
+.MyPathTrainWayCircle3 {
+    left: 0;
+    top: 598px;
+}
+
+.MyPathTrainWayCircle4 {
+    right: 0;
+    top: 897px;
+}
+
+.MyPathTrainWayLine1 {
+    left: 100px;
+    top: 75px;
+
+    transform-origin: left top;
+    transform: rotate(15deg);
+    z-index: 3;
+}
+
+.MyPathTrainWayLine2 {
+    right: 100px;
+    top: 374px;
+
+    transform-origin: right top;
+    transform: rotate(-15deg);
+    z-index: 2;
+}
+
+.MyPathTrainWayLine3 {
+    left: 100px;
+    top: 673px;
+
+    transform-origin: left top;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.MyPathTrainWayText {
+    font-size: 26px;
     font-family: 'Inter', sans-serif;
     
     color: white;
 }
 
-.MyPathTrainWay {
+.MyPathTrainWayTextContainer1, .MyPathTrainWayTextContainer2, .MyPathTrainWayTextContainer3, .MyPathTrainWayTextContainer4 {
+    width: 600px;
+    height: 200px;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyPathTrainWayTextContainer1 {
+    top: 0;
+    right: 0;
+}
+
+.MyPathTrainWayTextContainer2 {
+    top: 299px;
+    left: 0;
+}
+
+.MyPathTrainWayTextContainer3 {
+    top: 598px;
+    right: 0;
+}
+
+.MyPathTrainWayTextContainer4 {
+    top: 897px;
+    left: 0;
+}
+
+.MyPathEndTextContainer {
+    display: flex;
+    justify-content: center;
+
     margin-top: 51px;
+}
+
+.MyPathEndText {
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    width: 800px;
+    text-align: center
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');

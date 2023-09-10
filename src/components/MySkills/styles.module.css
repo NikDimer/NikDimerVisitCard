@@ -1,0 +1,45 @@
+.MySkillsMain {
+    width: 100%;
+    
+    background-color: #545454;
+
+    padding-bottom: 70px;
+}
+
+.MySkillsTitle {
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+
+    margin-bottom: 75px;
+}
+
+.MySkillsList {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+
+    margin-bottom: 78px;
+}
+
+.MySkillsDescriptionList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 49px;
+}
+
+.MySkillsDescriptionListItem {
+    width: 850px;
+
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
