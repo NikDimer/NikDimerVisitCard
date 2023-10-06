@@ -2,9 +2,9 @@ import styles from './styles.module.css'
 import Image from 'next/image'
 import classnames from 'classnames'
 
-import tgIcon from '@/src/assets/images/tg-icon.png'
-import ghIcon from '@/src/assets/images/gh-icon.png'
-import gmIcon from '@/src/assets/images/gm-icon.png'
+import tgIcon from '../../../src/assets/images/tg-icon.png'
+import ghIcon from '../../../src/assets/images/gh-icon.png'
+import gmIcon from '../../../src/assets/images/gm-icon.png'
 
 export default function Contacts() {
     return (

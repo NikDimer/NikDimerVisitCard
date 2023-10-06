@@ -2,12 +2,12 @@ import styles from './styles.module.css'
 import Image from 'next/image'
 import classnames from 'classnames'
 
-import mine1 from '@/src/assets/images/mine 1.png'
-import mine2 from '@/src/assets/images/mine 2.png'
-import mine3 from '@/src/assets/images/mine 3.png'
-import mine4 from '@/src/assets/images/mine 4.png'
-import mine5 from '@/src/assets/images/mine 5.png'
-import mine6 from '@/src/assets/images/mine 6.png'
+import mine1 from '../../../src/assets/images/mine 1.png'
+import mine2 from '../../../src/assets/images/mine 2.png'
+import mine3 from '../../../src/assets/images/mine 3.png'
+import mine4 from '../../../src/assets/images/mine 4.png'
+import mine5 from '../../../src/assets/images/mine 5.png'
+import mine6 from '../../../src/assets/images/mine 6.png'
 
 export default function MySkills() {
     return (

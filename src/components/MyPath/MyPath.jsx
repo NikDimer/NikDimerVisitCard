@@ -2,12 +2,12 @@ import styles from './styles.module.css'
 import Image from 'next/image'
 import classnames from 'classnames'
 
-import path1 from '@/src/assets/images/path1.jpg'
-import path2 from '@/src/assets/images/path2.jpeg'
-import path3 from '@/src/assets/images/path3.jpg'
-import path4 from '@/src/assets/images/path4.jpg'
+import path1 from '../../../src/assets/images/path1.jpg'
+import path2 from '../../../src/assets/images/path2.jpeg'
+import path3 from '../../../src/assets/images/path3.jpg'
+import path4 from '../../../src/assets/images/path4.jpg'
 
-import train from '@/src/assets/images/train.png'
+import train from '../../../src/assets/images/train.png'
 
 //import TrainWay from '@/src/assets/images/TrainWay.png'
 
