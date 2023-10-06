@@ -21,7 +21,10 @@
     flex-direction: column;
     gap: 49px;
 
+    list-style: none;
+
     margin-bottom: 78px;
+    width: 100%;
 }
 
 .MySkillsDescriptionList {
@@ -40,6 +43,142 @@
     font-family: 'Inter', sans-serif;
     
     color: white;
+}
+
+@media (max-width: 1600px) {
+    .MySkillsTitle {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .MySkillsDescriptionListItem {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 1277px) {
+    .MySkillsTitle {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .MySkillsList {
+        gap: 30px;
+    }
+
+    .MySkillsList li img {
+        height: 90px;
+        width: auto;
+    }
+
+    .MySkillsDescriptionListItem {
+        font-size: 18px;
+        width: 800px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .MySkillsList li img {
+        height: 75px;
+        width: auto;
+    }
+
+    .MySkillsList {
+        gap: 25px;
+    }
+
+    .MySkillsDescriptionListItem {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .MySkillsTitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .MySkillsList {
+        gap: 20px;
+    }
+
+    .MySkillsList li img {
+        height: 60px;
+        width: auto;
+    }
+
+    .MySkillsDescriptionListItem {
+        font-size: 16px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .MySkillsDescriptionListItem {
+        font-size: 18px;
+    }
+
+    .MySkillsList li img {
+        height: 45px;
+        width: auto;
+    }
+
+    .MySkillsList {
+        gap: 18px;
+    }
+
+    .MySkillsDescriptionList {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .MySkillsTitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .MySkillsDescriptionListItem {
+        width: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .MySkillsList li img {
+        height: 40px;
+        width: auto;
+    }
+
+    .MySkillsList {
+        gap: 15px;
+    }
+
+    .MySkillsDescriptionListItem {
+        width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .MySkillsList li img {
+        height: 37px;
+        width: auto;
+    }
+
+    .MySkillsList {
+        gap: 13px;
+    }
+}
+
+@media (max-width: 380px) {
+    .MySkillsList li img {
+        height: 31px;
+        width: auto;
+    }
+
+    .MySkillsList {
+        gap: 13px;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');

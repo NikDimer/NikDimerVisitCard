@@ -24,19 +24,19 @@ export default function Hero() {
                 <p className={styles.HeroBackgroundTextDescription}>Я начинающий Frontend-разработчик</p>
             </div>
             <div className={styles.HeroBackgroundClouds1}>
-                <Image className={styles.HeroBackgroundCloud1} src={cloud1} />
-                <Image className={styles.HeroBackgroundCloud2} src={cloud2} />
-                <Image className={styles.HeroBackgroundCloud3} src={cloud3} />
+                <Image className={classnames(styles.HeroBackgroundCloud1, styles.HeroBackgroundCloud)} src={cloud1} />
+                <Image className={classnames(styles.HeroBackgroundCloud2, styles.HeroBackgroundCloud)} src={cloud2} />
+                <Image className={classnames(styles.HeroBackgroundCloud3, styles.HeroBackgroundCloud)} src={cloud3} />
             </div>
             <div className={styles.HeroBackgroundClouds2}>
-                <Image className={styles.HeroBackgroundCloud4} src={cloud4} />
-                <Image className={styles.HeroBackgroundCloud5} src={cloud5} />
-                <Image className={styles.HeroBackgroundCloud6} src={cloud6} />
+                <Image className={classnames(styles.HeroBackgroundCloud4, styles.HeroBackgroundCloud)} src={cloud4} />
+                <Image className={classnames(styles.HeroBackgroundCloud5, styles.HeroBackgroundCloud)} src={cloud5} />
+                <Image className={classnames(styles.HeroBackgroundCloud6, styles.HeroBackgroundCloud)} src={cloud6} />
             </div>
             <div className={styles.HeroBackgroundClouds3}>
-                <Image className={styles.HeroBackgroundCloud7} src={cloud7} />
-                <Image className={styles.HeroBackgroundCloud8} src={cloud8} />
-                <Image className={styles.HeroBackgroundCloud9} src={cloud9} />
+                <Image className={classnames(styles.HeroBackgroundCloud7, styles.HeroBackgroundCloud)} src={cloud7} />
+                <Image className={classnames(styles.HeroBackgroundCloud8, styles.HeroBackgroundCloud)} src={cloud8} />
+                <Image className={classnames(styles.HeroBackgroundCloud9, styles.HeroBackgroundCloud)} src={cloud9} />
             </div>
             <Image className={styles.HeroBackgroundMoon} src={moon} />
             <div className={styles.HeroBackgroundStars}>

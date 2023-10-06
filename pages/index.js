@@ -21,7 +21,7 @@ export default function Home() {
         <Hero />
         <MyPath />
         <MySkills />
-        <Portfolio />
+        {/*<Portfolio />*/}
         <Contacts />
       </main>
     </>

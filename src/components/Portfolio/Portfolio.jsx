@@ -8,7 +8,7 @@ import { filtersList } from '../../constants/mock.js'
 export default function Portfolio() {
     return (
         <div className={styles.PortfolioMain}>
-            <h1 className={styles.PortfolioTitle}>Портфолио</h1>
+            <h1 className={styles.PortfolioTitle}>Примеры работ</h1>
 
             <ul className={styles.PortfolioFiltersGroup}>
                 {filtersList.map((filter) => {

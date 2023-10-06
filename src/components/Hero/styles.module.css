@@ -14,6 +14,8 @@
     position: absolute;
     left: 170px;
     top: 280px;
+    
+    z-index: 1000;
 }
 
 .HeroBackgroundTextMain {
@@ -36,7 +38,7 @@
 
 .HeroBackgroundClouds1, .HeroBackgroundClouds2, .HeroBackgroundClouds3 {
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -59,8 +61,8 @@
     animation: clouds3 30s linear infinite;
 }
 
-.HeroBackgroundCloud1, .HeroBackgroundCloud2, .HeroBackgroundCloud3, .HeroBackgroundCloud4, .HeroBackgroundCloud5, .HeroBackgroundCloud6, .HeroBackgroundCloud7, .HeroBackgroundCloud8, .HeroBackgroundCloud9 {
-    z-index: 100;
+.HeroBackgroundCloud {
+    z-index: 10000;
     position: absolute;
     opacity: 0.9;
 }
@@ -266,8 +268,6 @@
     position: absolute;
     top: 50px;
     right: 60px;
-
-    width: 128px;
 }
 
 .HeroBackgroundGround {
@@ -300,6 +300,170 @@
 @media (max-width: 1980px) {
     .HeroBackgroundHouses {
         height: 729px;
+    }
+
+    .HeroBackgroundMoon {
+        width: 128px;
+    }
+
+    .HeroBackgroundTextMain {
+        font-size: 32px;
+        margin-bottom: 19px;
+    }
+    
+    .HeroBackgroundTextDescription {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .HeroBackgroundHouses {
+        height: 500px;
+        width: 500px;
+    }
+
+    .HeroBackgroundMoon {
+        width: 96px;
+        height: 117px;
+    }
+
+    .HeroBackgroundTextMain {
+        font-size: 32px;
+        margin-bottom: 19px;
+    }
+    
+    .HeroBackgroundTextDescription {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .HeroBackgroundLand1 {
+        width: 325px;
+        height: 49px;
+    }
+
+    .HeroBackgroundLand2 {
+        height: 30.5px;
+    }
+
+    .HeroBackgroundText {
+        left: 120px;
+        top: 220px;
+    }
+
+    .HeroBackgroundStar7 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .HeroBackgroundHouses {
+        height: 400px;
+        width: 400px;
+    }
+
+    .HeroBackgroundMoon {
+        width: 64px;
+        height: 78px;
+    }
+
+    .HeroBackgroundTextMain {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .HeroBackgroundTextDescription {
+        font-size: 20px;
+    }
+
+    .HeroBackgroundLand2 {
+        height: 30.5px;
+    }
+
+    .HeroBackgroundText {
+        left: 100px;
+        top: 200px;
+    }
+    
+    .HeroBackgroundStar {
+        width: 15px;
+        height: 15px;
+    }
+
+    .HeroBackgroundStar10 {
+        display: none;
+    }
+
+    .HeroBackgroundCloud {
+        transform: scale(0.75);
+    }
+    
+    .HeroBackgroundMoon {
+        top: 30px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .HeroBackgroundText {
+        left: 80px;
+        top: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroBackgroundText {
+        left: 50px;
+        top: 170px;
+    }
+
+    .HeroBackgroundStar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .HeroBackgroundCloud {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroBackgroundLand1 {
+        display: none;
+    }
+
+    .HeroBackgroundLand2 {
+        border-top-left-radius: 100px;
+    }
+
+    .HeroBackgroundText {
+        top: 20vh;
+        left: 0;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .HeroBackgroundHouses {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .HeroBackgroundHouses {
+        width: 250px;
+        height: 250px;
+    }
+
+    .HeroBackgroundTextMain {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+        
+    .HeroBackgroundTextDescription {
+        font-size: 16px;
     }
 }
 
