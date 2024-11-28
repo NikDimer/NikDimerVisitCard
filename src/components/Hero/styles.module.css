@@ -14,15 +14,15 @@
     position: absolute;
     left: 170px;
     top: 280px;
-    
+
     z-index: 1000;
 }
 
 .HeroBackgroundTextMain {
     font-size: 48px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: "Inter", sans-serif;
+
     color: white;
 
     margin-bottom: 19px;
@@ -31,37 +31,21 @@
 .HeroBackgroundTextDescription {
     font-size: 32px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: "Inter", sans-serif;
+
     color: white;
 }
 
-.HeroBackgroundClouds1, .HeroBackgroundClouds2, .HeroBackgroundClouds3 {
+.HeroBackgroundClouds {
     position: absolute;
     z-index: 10000;
-    width: 100vw;
+    width: calc(100vw + 600px);
     height: 100vh;
-    left: 0;
+    left: -300px;
     top: 0;
-
-    will-change: transform;
 }
 
-.HeroBackgroundClouds1 {
-    animation: clouds1 30s linear infinite;
-}
-
-.HeroBackgroundClouds2 {
-    transform: translateX(100%);
-    animation: clouds2 30s linear infinite;
-}
-
-.HeroBackgroundClouds3 {
-    transform: translateX(200%);
-    animation: clouds3 30s linear infinite;
-}
-
-.HeroBackgroundCloud {
+/*.HeroBackgroundCloud {
     z-index: 10000;
     position: absolute;
     opacity: 0.9;
@@ -162,7 +146,7 @@
         transform: translateX(-100%);
     }
 }
-
+*/
 .HeroBackgroundStars {
     position: absolute;
     top: 0;
@@ -268,6 +252,7 @@
     position: absolute;
     top: 50px;
     right: 60px;
+    z-index: 100000;
 }
 
 .HeroBackgroundGround {
@@ -275,7 +260,7 @@
     bottom: 0;
 
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
 
     width: 100%;
 }
@@ -310,9 +295,9 @@
         font-size: 32px;
         margin-bottom: 19px;
     }
-    
+
     .HeroBackgroundTextDescription {
-        font-size: 32px;
+        font-size: 24px;
     }
 }
 
@@ -331,7 +316,7 @@
         font-size: 32px;
         margin-bottom: 19px;
     }
-    
+
     .HeroBackgroundTextDescription {
         font-size: 24px;
     }
@@ -372,7 +357,7 @@
         font-size: 24px;
         margin-bottom: 12px;
     }
-    
+
     .HeroBackgroundTextDescription {
         font-size: 20px;
     }
@@ -385,7 +370,7 @@
         left: 100px;
         top: 200px;
     }
-    
+
     .HeroBackgroundStar {
         width: 15px;
         height: 15px;
@@ -398,7 +383,7 @@
     .HeroBackgroundCloud {
         transform: scale(0.75);
     }
-    
+
     .HeroBackgroundMoon {
         top: 30px;
         right: 40px;
@@ -461,10 +446,17 @@
         font-size: 18px;
         margin-bottom: 8px;
     }
-        
+
     .HeroBackgroundTextDescription {
         font-size: 16px;
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@media (max-width: 320px) {
+    .HeroBackgroundHouses {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");

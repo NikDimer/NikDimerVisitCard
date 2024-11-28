@@ -1,6 +1,6 @@
 .MyPathMain {
     width: 100%;
-    
+
     background-color: #545454;
 
     padding-top: 54px;
@@ -10,8 +10,8 @@
 .MyPathTitle {
     font-size: 42px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: "Inter", sans-serif;
+
     color: white;
 
     margin-bottom: 51px;
@@ -38,7 +38,9 @@
     object-fit: cover;
 }
 
-.MyPathTrainImage1, .MyPathTrainImage2, .MyPathTrainImage3 {
+.MyPathTrainImage1,
+.MyPathTrainImage2,
+.MyPathTrainImage3 {
     width: 692px;
     height: 40px;
 
@@ -176,7 +178,7 @@
 
     background-color: #303030;
 
-    overflow: hidden
+    overflow: hidden;
 }
 
 .MyPathTrainWayCircle1 {
@@ -228,8 +230,8 @@
 
 .MyPathTrainWayText {
     font-size: 26px;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: "Inter", sans-serif;
+
     color: white;
 }
 
@@ -273,12 +275,12 @@
 
 .MyPathEndText {
     font-size: 26px;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: "Inter", sans-serif;
+
     color: white;
 
     width: 800px;
-    text-align: center
+    text-align: center;
 }
 
 @media (max-width: 1600px) {
@@ -372,7 +374,6 @@
 }
 
 @media (max-width: 700px) {
-
     .MyPathTrainWayContainer {
         height: auto;
     }
@@ -445,15 +446,31 @@
         font-size: 16px;
     }
 
-    .MyPathEndText {
-        font-size: 16px;
-        width: 250px;
+    .MyPathTrainWay {
+        gap: 10px;
+    }
+
+    .MyPathTrainWayCircle {
+        width: 150px;
+        height: 150px;
+
+        margin: 25px;
+        margin-right: 10px;
+    }
+
+    .MyPathTrainWayImage {
+        width: 150px;
+        height: 150px;
     }
 }
 
 @media (max-width: 350px) {
+    .MyPathTrainWayText {
+        font-size: 14px;
+    }
+
     .MyPathTrainWay {
-        row-gap: 40px;
+        gap: 10px;
     }
 
     .MyPathEndTextContainer {
@@ -461,4 +478,33 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@media (max-width: 320px) {
+    .MyPathTrainWay {
+        gap: 10px;
+        grid-template-columns: 80px 1fr;
+    }
+
+    .MyPathTrainWayTextContainer {
+        padding: 0;
+    }
+
+    .MyPathTextContainer {
+        margin-top: 120px;
+        padding: 0;
+    }
+
+    .MyPathTrainWayCircle {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        margin-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .MyPathTrainWayImage {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
