@@ -40,8 +40,9 @@ export default function Hero() {
                     for (let i = 1; i < 18; i++) {
                         res.push(i);
                     }
-                    return res.map((el) => (
+                    return res.map((el, ind) => (
                         <Image
+                            key={ind}
                             className={classnames(
                                 styles["HeroBackgroundStar" + el],
                                 styles.HeroBackgroundStar
