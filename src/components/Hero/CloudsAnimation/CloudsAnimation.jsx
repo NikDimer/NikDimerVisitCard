@@ -11,15 +11,15 @@ import cloud8 from "../../../assets/images/cloud8.png";
 import cloud9 from "../../../assets/images/cloud9.png";
 
 const cloudsData = [
-    { src: cloud1, left: 0, top: "36%", speed: 20, delay: 0 },
-    { src: cloud2, left: 0, top: "11%", speed: 20, delay: 3 },
-    { src: cloud3, left: 0, top: "21%", speed: 20, delay: 7 },
-    { src: cloud4, left: 0, top: "20%", speed: 20, delay: 11 },
-    { src: cloud5, left: 0, top: "40%", speed: 20, delay: 14 },
-    { src: cloud6, left: 0, top: "25%", speed: 20, delay: 19 },
-    { src: cloud7, left: 0, top: "45%", speed: 20, delay: 23 },
-    { src: cloud8, left: 0, top: "26%", speed: 20, delay: 25 },
-    { src: cloud9, left: 0, top: "50%", speed: 20, delay: 28 },
+    { src: cloud1, left: 0, top: "36%", speed: 40, delay: 0 },
+    { src: cloud2, left: 0, top: "11%", speed: 40, delay: 8 },
+    { src: cloud3, left: 0, top: "21%", speed: 40, delay: 10 },
+    { src: cloud4, left: 0, top: "32%", speed: 40, delay: 16 },
+    { src: cloud5, left: 0, top: "40%", speed: 40, delay: 23 },
+    { src: cloud6, left: 0, top: "25%", speed: 40, delay: 28 },
+    /*{ src: cloud7, left: 0, top: "45%", speed: 40, delay: 22 },
+    { src: cloud8, left: 0, top: "26%", speed: 40, delay: 27 },
+    { src: cloud9, left: 0, top: "50%", speed: 40, delay: 30 },*/
 ];
 
 const Cloud = ({ src, speed, left, top, sizeMultiplier, delay }) => {

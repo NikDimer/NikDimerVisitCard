@@ -1,0 +1,26 @@
+.fish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 240px;
+    height: auto;
+}
+
+.skill_logo {
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 5px;
+    max-width: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_logo_image {
+    width: 200px;
+    height: auto;
+}
